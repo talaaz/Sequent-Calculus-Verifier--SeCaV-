@@ -1,0 +1,15 @@
+theory Exam imports SeCaV begin
+
+(* REPLACE $$$$$ WITH LEMMA/PROOF *)
+
+lemma $$$$$
+proof -
+  $$$$$
+qed
+
+lemma $$$$$
+proof -
+  $$$$$
+qed
+
+end

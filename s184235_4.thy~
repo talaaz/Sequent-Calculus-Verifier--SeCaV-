@@ -1,0 +1,42 @@
+theory Assignment_4_just_use_your_sNNNNNN_student_id_as_theory_name imports SeCaV begin
+
+\<comment> \<open>Please keep each line shorter than 100 characters and do not modify the above "imports" at all\<close>
+
+(*
+  Solutions must be entered directly in this file instead of $$$$$ such that there are no errors.
+
+  IT IS ONLY ALLOWED TO REPLACE $$$$$ WITH LEMMA/PROOF - ABSOLUTELY NO OTHER CHANGES ARE ALLOWED.
+
+  This comment can be removed and of course the theory name should be changed to your student id.
+*)
+
+section \<open>Problem 1\<close>
+
+proposition \<open>(\<forall>x. p x) \<longrightarrow> p a\<close> by metis
+
+lemma $$$$$
+proof -
+  $$$$$
+qed
+
+section \<open>Problem 2\<close>
+
+proposition \<open>p a a \<longrightarrow> (\<exists>x y. p x y)\<close> by metis
+
+lemma $$$$$
+proof -
+  $$$$$
+qed
+
+section \<open>Problem 3\<close>
+
+proposition \<open>(\<forall>x. p x) \<and> (\<forall>x. q x) \<longrightarrow> (\<forall>x. p x \<and> q x)\<close> by metis
+
+lemma $$$$$
+proof -
+  $$$$$
+qed
+
+\<comment> \<open>Please keep the "end" command and ensure that Isabelle2020 does not indicate any errors at all\<close>
+
+end

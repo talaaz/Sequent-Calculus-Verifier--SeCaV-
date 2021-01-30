@@ -1,0 +1,36 @@
+theory test_exam imports SeCaV begin
+
+proposition \<open>\<not> \<not> p \<longrightarrow> p\<close> by metis
+lemma \<open>\<tturnstile>
+
+  [
+     Imp (Neg(Neg( P)))) P
+  ]
+  \<close>
+proof -
+   from AlphaImp have ?thesis if \<open>\<tturnstile>
+    [
+      Neg (Neg (Neg P)),
+      P
+    ]
+    \<close>
+ with Neg have ?thesis if \<open>\<tturnstile>
+    [
+      Neg P,
+      P
+    ]
+    \<close>
+    using that by simp
+  with Ext have ?thesis if \<open>\<tturnstile>
+    [
+      P,
+      Neg P
+    ]
+    \<close>
+    using that by simp
+  with Basic show ?thesis
+    by simp
+qed
+
+
+end
